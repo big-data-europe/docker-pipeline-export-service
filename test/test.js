@@ -15,10 +15,6 @@ const expect = chai.expect
  *
  */
 
-const graph = process.env.MU_APPLICATION_GRAPH !== undefined
-  ? process.env.MU_APPLICATION_GRAPH
-  : 'http://mu.semte.ch/application'
-
 parallel('mu-semtech-template', () => {
   let server
   const endpointUrl = 'http://mu.semte.ch/application'
