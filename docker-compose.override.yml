@@ -1,0 +1,14 @@
+version: "2"
+services:
+
+  export:
+    build: .
+    volumes:
+      - /app/node_modules
+      - ./package.json:/app/package.json
+      - ./src/routes/construct.js:/app/src/routes/construct.js
+      - ./test:/app/test
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: "development"
