@@ -4,7 +4,7 @@
 [![Issue Count](https://codeclimate.com/github/big-data-europe/docker-pipeline-export-service/badges/issue_count.svg)](https://codeclimate.com/github/big-data-europe/docker-pipeline-export-service)
 
 
-Docker Pipeline Export Service
+Mu Pipeline Export Service
 ==============================
 
 Microservice that expose an endpoint to export pipelines.
