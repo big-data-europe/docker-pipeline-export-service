@@ -2,13 +2,21 @@ version: "2"
 services:
 
   export:
+    command: sh -c "npm install && exec npm run dev"
     build: .
     volumes:
       - /app/node_modules
       - ./package.json:/app/package.json
-      - ./src/routes/construct.js:/app/src/routes/construct.js
+      - ./.babelrc:/app/.babelrc
+      - ./src/construct.js:/app/src/construct.js
       - ./test:/app/test
     ports:
       - 3000:3000
     environment:
       NODE_ENV: "development"
+
+
+networks:
+  default:
+    external:
+      name: demosparksensordata_default

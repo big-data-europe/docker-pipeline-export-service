@@ -1,8 +1,5 @@
 import Joi from 'joi'
-
-const graph = process.env.MU_APPLICATION_GRAPH !== undefined
-  ? process.env.MU_APPLICATION_GRAPH
-  : 'http://mu.semte.ch/application'
+import { graph } from 'helpers/sparql'
 
 export default [
   {
