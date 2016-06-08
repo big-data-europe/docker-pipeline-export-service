@@ -1,1 +1,1 @@
-FROM semtech/mu-export-template:latest
+FROM semtech/mu-export-template:0.1.0
