@@ -1,7 +1,7 @@
 {
-  "name": "docker-pipeline-export",
-  "version": "1.0.0",
-  "description": "Microservice to export data using custom defined SPARQL queries",
+  "name": "mu-pipeline-export-service",
+  "version": "0.1.0",
+  "description": "Microservice to export a Big Data pipeline created in mu.semte.ch",
   "main": "server.js",
   "standard": {
     "parser": "babel-eslint",
@@ -30,9 +30,9 @@
     "sparql",
     "construct"
   ],
-  "author": "You <you@tenforce.com>",
+  "author": "Cécile Tonglet <cecile.tonglet@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/big-data-europe/docker-pipeline-export-service",
+  "homepage": "https://github.com/big-data-europe/mu-pipeline-export-service",
   "devDependencies": {
     "babel-eslint": "^6.0.2",
     "babel-istanbul": "^0.8.0",
